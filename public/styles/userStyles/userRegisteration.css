@@ -1,0 +1,144 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    color: #333;
+}
+
+/* Centered box styling */
+.content-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff6b6b;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 6px;
+}
+
+/* Button styling */
+input[type="submit"] {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #e55b5b;
+}
+
+/* Password container styling */
+.password-container {
+    position: relative;
+}
+
+/* Eye icon styling */
+.password-container i {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+/* Link styling */
+.login-link {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+/* Button styling for the Login button */
+.login-btn {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.login-btn:hover {
+    background-color: #e55b5b;
+}
+
+.message-text {
+    color: #28a745;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 6px;
+    animation: fadeOut 10s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#error-message{
+    color: red;
+    display: none;
+    font-size: .8em;
+}
+
+#password-error{
+    color: red;
+    display: none;
+    font-size: .8em;
+}
+
+#name-message{
+    color: red;
+    display: none;
+    font-size: .8em;
+}
+
+#email-message{
+    color: red;
+    display: none;
+    font-size: .8em;
+}

@@ -1,0 +1,42 @@
+<% include('../layouts/header.ejs') %>
+
+<link rel="stylesheet" href="/styles/userStyles/userRegisteration.css">
+<!-- Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMH9IH2cU3s2Ig2t/5/7x8P+o8biKjZ8pWqH9I" crossorigin="anonymous">
+
+
+<div class="content-box">
+
+    <h1>Sign Up</h1>
+    <p class="message-text"><%= message %></p>
+
+    <form action="" method="post" id="register-form">
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <p id="name-message">Don't include numbers in  your name</p>
+        <br><br>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <p id="email-message">Enter the correct gmail</p>
+        <br><br>
+        <input type="text" id="mobileNumber" name="mobile" placeholder="Enter your phone number" required>
+        <p id="error-message">Mobile number must be 10 digits not the letters</p>
+        <br><br> 
+        
+        <div class="password-container">
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <p id="password-error">Password must contain at least one uppercase letter, one lowercase letter, one number, and be between 6 to 10 characters long</p>
+        </div>
+        <br>
+
+        <input type="submit" name="registerButton" value="Sign Up">
+        <br><br>
+    </form>
+
+    <div class="login-section">
+        <a href="/user/login">Already an existing user? sign In here</a>
+    </div>
+    
+</div>
+
+<script src="/scripts/userRegistration.js"></script>
+
+<% include('../layouts/footer.ejs') %>

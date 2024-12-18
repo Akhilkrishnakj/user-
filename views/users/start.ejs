@@ -1,0 +1,13 @@
+<% include('../layouts/header.ejs') %>
+
+<link rel="stylesheet" href="/styles/start.css">
+<div class="content-box">
+    <h1>Welcome to User Management System</h1>
+    <p>Please select your access type:</p>
+    <div class="button-container">
+      <button class="btn btn-user" onclick="window.location.href='/user/login'">User</button>
+      <button class="btn btn-admin" onclick="window.location.href='/admin/login'">Admin</button>
+    </div>
+</div>
+
+<% include('../layouts/footer.ejs') %>

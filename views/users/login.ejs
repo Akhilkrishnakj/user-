@@ -1,0 +1,31 @@
+<% include('../layouts/header.ejs') %>
+
+<link rel="stylesheet" href="/styles/userStyles/modern-login.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<div class="content-box">
+    <h1>Welcome Back</h1>
+    <% if (message) { %>
+        <p class="message-text"><%= message %></p>
+    <% } %>
+
+    <form method="post" id="login-form">
+        <div class="input-group">
+            <input type="email" name="email" placeholder="Email address" required>
+        </div>
+
+        <div class="password-container">
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+
+        <input type="submit" name="loginButton" value="Sign In">
+        
+        <div class="login-section">
+            <a href="/user/register">New user? Create an account</a>
+        </div>
+    </form>
+</div>
+
+<script src="/scripts/modern-login.js"></script>
+
+<% include('../layouts/footer.ejs') %>

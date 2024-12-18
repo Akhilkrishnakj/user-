@@ -1,0 +1,15 @@
+<% include('../layouts/header.ejs') %>
+<link rel="stylesheet" href="/styles/adminStyles/login.css">
+
+<div class="content-box">
+    
+    <h1>Admin Login</h1>
+    <p class="error-text"><%= error %></p>
+    <form action="/admin/login" method="POST">
+        <input type="text" name="email" placeholder="Enter your Email-id" required>
+        <input type="password" name="password" placeholder="Enter your Password" required>
+        <button type="submit" class="login-btn">Login</button>
+    </form>
+</div>
+
+<% include('../layouts/footer.ejs') %>
