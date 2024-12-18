@@ -8,7 +8,7 @@ const auth = require("../middleware/auth")
 //requiring the controller for loading the pages.
 const userController = require("../controller/userController")
 
-// It will shows the start page
+// It will shows the start pagess
 user_route.get('/',auth.is_UserLogout,auth.is_AdminLogout,  userController.loadStart);
 
 // It will shows the registeration form
